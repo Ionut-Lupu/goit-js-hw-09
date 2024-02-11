@@ -12,7 +12,7 @@ const options = {
   onClose(selectedDates) {
     const selectedDate = selectedDates[0];
     if (selectedDate < new Date()) {
-      Notify.warning('Please choose a date in the future');
+      Notify.failure('Please choose a date in the future');
       start.disabled = true;
     } else {
       start.disabled = false;
