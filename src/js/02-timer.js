@@ -80,3 +80,10 @@ timerElements.forEach((element) => {
   element.style.display = 'flex';
   element.style.gap = '20px';
 });
+
+const fieldElements = document.querySelectorAll('.field');
+fieldElements.forEach((element) => {
+  element.style.display = 'flex';
+  element.style.flexDirection = 'column';
+  element.style.alignItems = 'center';
+});
